@@ -1,6 +1,8 @@
 import { Route, Routes} from 'react-router-dom';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
+import CreateAccountP from './pages/CreateAccountP';
+import CreateAccountNP from './pages/CreateAccountNP';
 
 function App() {
 
@@ -9,7 +11,9 @@ function App() {
     <main>
       <Routes>
         <Route path="*" element={<NotFound/>}></Route>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/' element={<Home />} />
+        <Route path='/create' element={<CreateAccountP />} > </Route>
+        <Route path='/createNP' element={<CreateAccountNP />} > </Route>
       </Routes>
     </main>
   );
